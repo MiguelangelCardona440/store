@@ -62,6 +62,67 @@
           </div>
         </div>
       </section>
+
+      <section class="modal hidden">
+        <button class="btn--closemodal">&times;</button>
+        <div id="modal__header">
+          <h2 class="modal__header-title">
+            Crea un producto <br />
+            en solo <span class="highlight">1 minuto</span>
+          </h2>
+          <div id="img-preview"></div>
+        </div>
+        <form id="modal__form">
+          <label for="image-input">imagen</label>
+          <input
+            type="file"
+            id="image-input"
+            name="image-input"
+            accept="image/*"
+            required
+          />
+
+          <label for="name-inout"></label>
+          <input
+            type="text"
+            name="name-input"
+            id="name-input"
+            placeholder="Nombre del producto"
+            required
+          />
+
+          <label for="yaer-input">Ano</label>
+          <input
+            type="text"
+            name="yaer-input"
+            id="yaer-input"
+            placeholder="Ano del producto"
+            required
+          />
+
+          <label for="price-input">Precio</label>
+          <input
+            type="number"
+            min="15"
+            max="5.000"
+            name="price-input"
+            id="price-input"
+            placeholder="Precio"
+          />
+
+          <label for="brand-input">Marca</label>
+          <input
+            type="text"
+            name="brand-input"
+            id="brand-input"
+            placeholder="Marca del product0"
+          />
+
+          <button type="submit" class="btn">Agragar producto &rarr;</button>
+        </form>
+      </section>
+
+      <div class="overlay hidden"></div>
     </main>
   </body>
 </html>
