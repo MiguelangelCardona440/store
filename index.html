@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" description="Noel Rojas" />
+    <meta name="description" description="Practica de Front-end - Tienda" />
+    <title>Tienda</title>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__logo">MaxiQuenos</div>
+      <div class="navbar__search">
+        <form>
+          <input type="text" name="search" id="search" placeholder="search" />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <div class="navbar__avatar">
+        <div class="navbar__avatar-image">
+          <p>MC</p>
+        </div>
+        <div class="navbar__avatar-name">
+          <p>Miguel</p>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <section>
+        <button class="btn-show-modal"></button>
+      </section>
+      <section id="product-container">
+        <div class="product-car">
+          <img src="https://placehold.co/400" alt="img" />
+          <div class="product__details">
+            <div class="product__details-text">
+              <p class="name">Snikers off-white</p>
+              <p class="year">2024</p>
+              <p class="marca">Nike</p>
+              <p class="price"><span>$</span>80.00</p>
+            </div>
+            <div class="product__details-cta">
+              <button>
+                <i class="fa-sharp-duotone fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
